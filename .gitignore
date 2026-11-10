@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.next-production/
+.next-production-*/
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.pyc
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+.DS_Store
