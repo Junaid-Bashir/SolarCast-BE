@@ -13,3 +13,16 @@ test-results/
 playwright-report/
 *.tsbuildinfo
 .DS_Store
+
+# Local research data, generated exports and promotional assets.
+/Shared/data/
+/data/
+/solarcast-platform/
+video/
+Video/
+videos/
+Videos/
+*.mp4
+*.mov
+*.webm
+*.avi

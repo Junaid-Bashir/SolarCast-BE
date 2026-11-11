@@ -83,6 +83,26 @@ Keep the same `SOLARCAST_DIST_DIR` for `npm start`; choose another fresh `.next-
 
 The demo has 1,344 synthetic quarter-hour observations over 14 days from June 1, 2026, with explicit +02:00 offsets. It represents an imaginary 100 kW installation in kW using a daylight sine curve, periodic cloud variation, seeded random noise, and synthetic temperature. It is **not** measured Belgian/company data, real weather, or a validated PV simulator. Scores are labeled synthetic. The landing curve is independently labeled illustrative. No external dataset license is required.
 
+## Belgian day-ahead benchmark
+
+The real-data benchmark runs separately from the synthetic application demo. It
+includes reproducible Elia downloads, observed-only eligibility, Brussels
+18:00 day-ahead schedules and causal baseline validation.
+
+- [Benchmark protocol](Shared/docs/belgian-benchmark.md)
+- [Elia ingestion and reproduction](Shared/docs/elia-ingestion.md)
+- [Missing-production investigation](Shared/docs/missing-production-investigation.md)
+- [Training and window eligibility](Shared/docs/eligibility-policy.md)
+- [Day-ahead schedules](Shared/docs/dayahead-windows.md)
+- [First baseline validation results](Shared/docs/baseline-validation.md)
+
+On January–September 2025 validation data (273 complete days), RMSE was 2,166 MW
+for flat persistence and 1,020 MW for the 48-hour seasonal baseline. This is a
+baseline comparison; October–December 2025 remains unscored. Full methodology,
+assumptions and limitations accompany the results.
+
+![Baseline validation results](Shared/images/baseline-validation-v1.png)
+
 ## Data contract
 
 Use UTF-8 comma-separated `.csv`, at most 10 MB, 100,000 rows, and 100 columns, with unique nonempty headers and consistent row widths. Map distinct timestamp/generation columns explicitly. Use ISO 8601 (for example `2026-06-01T08:15:00+02:00`) and finite numeric generation in one source unit. Optional capacity must be positive/finite. Do not mix sites in a single series.

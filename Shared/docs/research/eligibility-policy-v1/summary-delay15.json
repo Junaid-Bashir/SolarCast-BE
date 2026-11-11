@@ -1,0 +1,84 @@
+{
+  "absent_intervals": 0,
+  "fit_cutoff": "2024-12-31T17:00:00+00:00",
+  "history_context_observations": 97,
+  "input_rows": 70176,
+  "input_sha256": "c82bbb0619771bc5cace5e841146950a223f1b791eecba41bd8368cd28c2d1d3",
+  "interval_minutes": 15,
+  "invalid_values": 0,
+  "issue_local_time": "18:00 Europe/Brussels",
+  "limitations": [
+    "Assumed availability, not observed historical publication times.",
+    "Input eligibility does not establish sufficient fit samples or predictive accuracy.",
+    "Window masks do not validate a per-origin model-fitting schedule; 2024 windows are diagnostic only.",
+    "No generation values filled; no model fitted; no final-test errors inspected.",
+    "Local-day seasonal baseline eligibility is deferred to the baseline design."
+  ],
+  "missing_values": 288,
+  "policy_version": 1,
+  "protocol_period_windows": {
+    "reserved_test_2025": {
+      "candidate_days": 92,
+      "common_scoreable_window": 92,
+      "complete_delivery_targets": 92,
+      "expected_targets": 8836,
+      "history_ml_issuable": 92,
+      "history_ml_scoreable_window": 92,
+      "persistence_issuable": 92,
+      "persistence_scoreable_window": 92,
+      "valid_targets": 8836
+    },
+    "training_2024": {
+      "candidate_days": 366,
+      "common_scoreable_window": 75,
+      "complete_delivery_targets": 78,
+      "expected_targets": 35136,
+      "history_ml_issuable": 76,
+      "history_ml_scoreable_window": 75,
+      "persistence_issuable": 365,
+      "persistence_scoreable_window": 78,
+      "valid_targets": 34848
+    },
+    "validation_2025": {
+      "candidate_days": 273,
+      "common_scoreable_window": 273,
+      "complete_delivery_targets": 273,
+      "expected_targets": 26204,
+      "history_ml_issuable": 273,
+      "history_ml_scoreable_window": 273,
+      "persistence_issuable": 273,
+      "persistence_scoreable_window": 273,
+      "valid_targets": 26204
+    }
+  },
+  "publication_delay_minutes_after_interval_end_assumed": 15,
+  "training": {
+    "candidate_examples": 35136,
+    "eligible_examples": 7368,
+    "excluded_examples": 27768,
+    "exclusion_reason_counts_overlapping": {
+      "insufficient_history_extent": 97,
+      "invalid_or_missing_history": 27645,
+      "invalid_or_missing_target": 288,
+      "label_unavailable_by_fit_cutoff": 25
+    },
+    "first_eligible_target": "2024-01-22 23:15:00+00:00",
+    "last_eligible_target": "2024-12-31 16:30:00+00:00"
+  },
+  "training_end_local_exclusive": "2025-01-01",
+  "training_lead_minutes": 15,
+  "training_start_local": "2024-01-01",
+  "window_end_local_exclusive": "2026-01-01",
+  "window_start_local": "2024-01-01",
+  "windows": {
+    "candidate_days": 731,
+    "common_scoreable_window": 440,
+    "complete_delivery_targets": 443,
+    "expected_targets": 70176,
+    "history_ml_issuable": 441,
+    "history_ml_scoreable_window": 440,
+    "persistence_issuable": 730,
+    "persistence_scoreable_window": 443,
+    "valid_targets": 69888
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "artifacts_sha256": {
+    "daily-metrics.csv": "5f1c3b94f7357888f745c58456686286963841e8026fa3da419dcc22cdeb8209",
+    "predictions.csv": "41e3035fa77e776ad3dda359e192166112571505066782bd10002ebfd0514ea2",
+    "scored-predictions.csv": "4fa6a616206c7dece2a65b02aec612fbbee961c44155f4d2157bf292d51b4df3",
+    "windows.csv": "82828d19a697eda76c81e8a0294bc4e3f47f5752017a415e048ae744c37d140c"
+  },
+  "attribution": "Source: Elia Transmission Belgium SA, Elia Open Data ods032, CC BY 4.0. Filtered, time-normalized and evaluated independently by SolarCast.",
+  "availability_delay_minutes_after_interval_end_assumed": 15,
+  "baseline_definitions": {
+    "persistence": "Hold the latest admissible observation across the complete trajectory.",
+    "seasonal_naive_48h": "Use source t-48 elapsed hours for each trajectory point; every chosen source must exist, be valid and available at issue. No fallback."
+  },
+  "baseline_version": 1,
+  "candidate_days": 273,
+  "candidate_delivery_intervals": 26204,
+  "common_scored_days": 273,
+  "complete": true,
+  "coverage_days_pct": 100.0,
+  "eligibility_policy_version": 1,
+  "end_local_exclusive": "2025-10-01",
+  "excluded_days": 0,
+  "input_sha256": "c82bbb0619771bc5cace5e841146950a223f1b791eecba41bd8368cd28c2d1d3",
+  "issued_windows_by_model": {
+    "persistence": 273,
+    "seasonal_naive_48h": 273
+  },
+  "metrics": {
+    "persistence": {
+      "bias_mw": 515.2496186460082,
+      "mae_mw": 1700.104658945199,
+      "observations": 26204,
+      "rmse_mw": 2166.29780738283,
+      "rmse_skill_vs_persistence_pct": 0.0
+    },
+    "seasonal_naive_48h": {
+      "bias_mw": -9.135370668600212,
+      "mae_mw": 497.0656546710426,
+      "observations": 26204,
+      "rmse_mw": 1019.7004597800172,
+      "rmse_skill_vs_persistence_pct": 52.92888834098262
+    }
+  },
+  "models": [
+    "persistence",
+    "seasonal_naive_48h"
+  ],
+  "notes": [
+    "Both models are scored on identical complete delivery windows; bridge steps are excluded.",
+    "Metrics are pooled quarter-hour MW errors, not interval energy or means of daily RMSE.",
+    "Nighttime intervals are included; persistence is a deliberately simple reference.",
+    "The 48-hour elapsed lag can shift the local solar profile by an hour around DST.",
+    "Neither baseline is fitted. Previously observed validation data may be used at later issues.",
+    "Historical publication latency and revisions are assumed, not reconstructed.",
+    "No comparison with Elia forecasts or claims of commercial performance."
+  ],
+  "period": "validation",
+  "reserved_test_scored": false,
+  "schedule_version": 1,
+  "scored_delivery_intervals_per_model": 26204,
+  "start_local": "2025-01-01"
+}

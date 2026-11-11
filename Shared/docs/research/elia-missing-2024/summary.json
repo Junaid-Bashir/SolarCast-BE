@@ -1,0 +1,60 @@
+{
+  "adjacent_measured_mw_before_after": {
+    "0.0 / 0.0": 288
+  },
+  "affected_local_dates": 288,
+  "attribution": "Elia Transmission Belgium SA, ods032, CC BY 4.0; filtered and summarized by SolarCast.",
+  "first_missing_local_date": "2024-01-01",
+  "last_missing_local_date": "2024-10-15",
+  "live_recheck": {
+    "batch_started_at_utc": "2026-11-11T11:25:31.929244Z",
+    "csv_records_match_json": 30,
+    "missing_set_matches_original_snapshot": true,
+    "national_records_match_original_snapshot": 30,
+    "regional_2345_samples": {
+      "2024-01-01": {
+        "null_production": 14,
+        "records": 14,
+        "zero_production": 0
+      },
+      "2024-01-22": {
+        "null_production": 0,
+        "records": 14,
+        "zero_production": 14
+      },
+      "2024-07-01": {
+        "null_production": 14,
+        "records": 14,
+        "zero_production": 0
+      },
+      "2024-10-15": {
+        "null_production": 14,
+        "records": 14,
+        "zero_production": 0
+      },
+      "2024-10-16": {
+        "null_production": 0,
+        "records": 14,
+        "zero_production": 14
+      }
+    }
+  },
+  "manifest_sha256": "220c067bb77294b22646e8201cb8f7713c985e1d39cc28a051109d05f46f89e6",
+  "missing_by_local_time": {
+    "23:45": 288
+  },
+  "missing_by_local_year": {
+    "2024": 288
+  },
+  "missing_by_utc_time": {
+    "21:45": 199,
+    "22:45": 89
+  },
+  "missing_with_both_neighbors_15_minutes_apart": 288,
+  "missing_with_reference_and_capacity_populated": 288,
+  "raw_null_production": 288,
+  "source_records": 70176,
+  "unaffected_dates_within_missing_span": [
+    "2024-01-22"
+  ]
+}

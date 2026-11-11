@@ -1,0 +1,36 @@
+{
+  "artifacts_sha256": {
+    "trajectory.csv": "3458825fa2095142bca33e90ebc72f71680140831fb351098a5e83b121682e9b",
+    "windows.csv": "50207e83a06af5edadab189cd30a880dbeb0b1756f5a6654ba1fd654c83ac368"
+  },
+  "availability_delay_minutes_after_interval_end_assumed": 15,
+  "complete": true,
+  "counts": {
+    "bridge_intervals": 11025,
+    "candidate_windows": 731,
+    "delivery_intervals": 42340,
+    "excluded_input_windows": 290,
+    "planned_windows": 441,
+    "planned_windows_with_complete_targets": 440,
+    "trajectory_intervals": 53365
+  },
+  "eligibility_policy_version": 1,
+  "end_local_exclusive": "2026-01-01",
+  "input_sha256": "c82bbb0619771bc5cace5e841146950a223f1b791eecba41bd8368cd28c2d1d3",
+  "notes": [
+    "Schedule only: no production predictions, scores, models or repaired source values.",
+    "A window is planned from issue-time input eligibility, never from future target completeness.",
+    "Bridge steps advance recursive state and are excluded from delivery scoring.",
+    "A bridge target can precede issue time when its measured value is assumed unpublished.",
+    "Historical publication delay and revision vintages remain unverified.",
+    "No fitting schedule or model-selection/test scoring is executed."
+  ],
+  "planned_windows_by_delivery_intervals": {
+    "100": 2,
+    "92": 1,
+    "96": 438
+  },
+  "profile": "history_ml",
+  "schedule_version": 1,
+  "start_local": "2024-01-01"
+}

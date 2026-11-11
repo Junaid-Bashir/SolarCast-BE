@@ -1,0 +1,209 @@
+[
+  {
+    "metadata": {
+      "availability_delay_minutes_after_interval_end_assumed": 15,
+      "bridge_intervals": 25,
+      "delivery_date": "2025-01-15",
+      "delivery_end_exclusive": "2025-01-15T23:00:00+00:00",
+      "delivery_intervals": 96,
+      "delivery_start": "2025-01-14T23:00:00+00:00",
+      "first_delivery_lead_from_issue_minutes": 360,
+      "first_delivery_target": "2025-01-14T23:00:00+00:00",
+      "issue_at": "2025-01-14T17:00:00+00:00",
+      "last_delivery_lead_from_issue_minutes": 1785,
+      "last_delivery_lead_from_origin_minutes": 1815,
+      "last_delivery_target": "2025-01-15T22:45:00+00:00",
+      "observation_origin": "2025-01-14T16:30:00+00:00",
+      "origin_available_at_assumed": "2025-01-14T17:00:00+00:00",
+      "recursive_steps": 121
+    },
+    "selected_steps": [
+      {
+        "delivery_date": "2025-01-15",
+        "forecast_step": 1,
+        "interval_end_utc": "2025-01-14T17:00:00+00:00",
+        "issue_at": "2025-01-14T17:00:00+00:00",
+        "lead_from_issue_minutes": -15,
+        "lead_from_origin_minutes": 15,
+        "observation_origin": "2025-01-14T16:30:00+00:00",
+        "role": "bridge",
+        "target_timestamp_local": "2025-01-14T17:45:00+01:00",
+        "target_timestamp_utc": "2025-01-14T16:45:00+00:00"
+      },
+      {
+        "delivery_date": "2025-01-15",
+        "forecast_step": 25,
+        "interval_end_utc": "2025-01-14T23:00:00+00:00",
+        "issue_at": "2025-01-14T17:00:00+00:00",
+        "lead_from_issue_minutes": 345,
+        "lead_from_origin_minutes": 375,
+        "observation_origin": "2025-01-14T16:30:00+00:00",
+        "role": "bridge",
+        "target_timestamp_local": "2025-01-14T23:45:00+01:00",
+        "target_timestamp_utc": "2025-01-14T22:45:00+00:00"
+      },
+      {
+        "delivery_date": "2025-01-15",
+        "forecast_step": 26,
+        "interval_end_utc": "2025-01-14T23:15:00+00:00",
+        "issue_at": "2025-01-14T17:00:00+00:00",
+        "lead_from_issue_minutes": 360,
+        "lead_from_origin_minutes": 390,
+        "observation_origin": "2025-01-14T16:30:00+00:00",
+        "role": "delivery",
+        "target_timestamp_local": "2025-01-15T00:00:00+01:00",
+        "target_timestamp_utc": "2025-01-14T23:00:00+00:00"
+      },
+      {
+        "delivery_date": "2025-01-15",
+        "forecast_step": 121,
+        "interval_end_utc": "2025-01-15T23:00:00+00:00",
+        "issue_at": "2025-01-14T17:00:00+00:00",
+        "lead_from_issue_minutes": 1785,
+        "lead_from_origin_minutes": 1815,
+        "observation_origin": "2025-01-14T16:30:00+00:00",
+        "role": "delivery",
+        "target_timestamp_local": "2025-01-15T23:45:00+01:00",
+        "target_timestamp_utc": "2025-01-15T22:45:00+00:00"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "availability_delay_minutes_after_interval_end_assumed": 15,
+      "bridge_intervals": 25,
+      "delivery_date": "2025-03-30",
+      "delivery_end_exclusive": "2025-03-30T22:00:00+00:00",
+      "delivery_intervals": 92,
+      "delivery_start": "2025-03-29T23:00:00+00:00",
+      "first_delivery_lead_from_issue_minutes": 360,
+      "first_delivery_target": "2025-03-29T23:00:00+00:00",
+      "issue_at": "2025-03-29T17:00:00+00:00",
+      "last_delivery_lead_from_issue_minutes": 1725,
+      "last_delivery_lead_from_origin_minutes": 1755,
+      "last_delivery_target": "2025-03-30T21:45:00+00:00",
+      "observation_origin": "2025-03-29T16:30:00+00:00",
+      "origin_available_at_assumed": "2025-03-29T17:00:00+00:00",
+      "recursive_steps": 117
+    },
+    "selected_steps": [
+      {
+        "delivery_date": "2025-03-30",
+        "forecast_step": 1,
+        "interval_end_utc": "2025-03-29T17:00:00+00:00",
+        "issue_at": "2025-03-29T17:00:00+00:00",
+        "lead_from_issue_minutes": -15,
+        "lead_from_origin_minutes": 15,
+        "observation_origin": "2025-03-29T16:30:00+00:00",
+        "role": "bridge",
+        "target_timestamp_local": "2025-03-29T17:45:00+01:00",
+        "target_timestamp_utc": "2025-03-29T16:45:00+00:00"
+      },
+      {
+        "delivery_date": "2025-03-30",
+        "forecast_step": 25,
+        "interval_end_utc": "2025-03-29T23:00:00+00:00",
+        "issue_at": "2025-03-29T17:00:00+00:00",
+        "lead_from_issue_minutes": 345,
+        "lead_from_origin_minutes": 375,
+        "observation_origin": "2025-03-29T16:30:00+00:00",
+        "role": "bridge",
+        "target_timestamp_local": "2025-03-29T23:45:00+01:00",
+        "target_timestamp_utc": "2025-03-29T22:45:00+00:00"
+      },
+      {
+        "delivery_date": "2025-03-30",
+        "forecast_step": 26,
+        "interval_end_utc": "2025-03-29T23:15:00+00:00",
+        "issue_at": "2025-03-29T17:00:00+00:00",
+        "lead_from_issue_minutes": 360,
+        "lead_from_origin_minutes": 390,
+        "observation_origin": "2025-03-29T16:30:00+00:00",
+        "role": "delivery",
+        "target_timestamp_local": "2025-03-30T00:00:00+01:00",
+        "target_timestamp_utc": "2025-03-29T23:00:00+00:00"
+      },
+      {
+        "delivery_date": "2025-03-30",
+        "forecast_step": 117,
+        "interval_end_utc": "2025-03-30T22:00:00+00:00",
+        "issue_at": "2025-03-29T17:00:00+00:00",
+        "lead_from_issue_minutes": 1725,
+        "lead_from_origin_minutes": 1755,
+        "observation_origin": "2025-03-29T16:30:00+00:00",
+        "role": "delivery",
+        "target_timestamp_local": "2025-03-30T23:45:00+02:00",
+        "target_timestamp_utc": "2025-03-30T21:45:00+00:00"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "availability_delay_minutes_after_interval_end_assumed": 15,
+      "bridge_intervals": 25,
+      "delivery_date": "2025-10-26",
+      "delivery_end_exclusive": "2025-10-26T23:00:00+00:00",
+      "delivery_intervals": 100,
+      "delivery_start": "2025-10-25T22:00:00+00:00",
+      "first_delivery_lead_from_issue_minutes": 360,
+      "first_delivery_target": "2025-10-25T22:00:00+00:00",
+      "issue_at": "2025-10-25T16:00:00+00:00",
+      "last_delivery_lead_from_issue_minutes": 1845,
+      "last_delivery_lead_from_origin_minutes": 1875,
+      "last_delivery_target": "2025-10-26T22:45:00+00:00",
+      "observation_origin": "2025-10-25T15:30:00+00:00",
+      "origin_available_at_assumed": "2025-10-25T16:00:00+00:00",
+      "recursive_steps": 125
+    },
+    "selected_steps": [
+      {
+        "delivery_date": "2025-10-26",
+        "forecast_step": 1,
+        "interval_end_utc": "2025-10-25T16:00:00+00:00",
+        "issue_at": "2025-10-25T16:00:00+00:00",
+        "lead_from_issue_minutes": -15,
+        "lead_from_origin_minutes": 15,
+        "observation_origin": "2025-10-25T15:30:00+00:00",
+        "role": "bridge",
+        "target_timestamp_local": "2025-10-25T17:45:00+02:00",
+        "target_timestamp_utc": "2025-10-25T15:45:00+00:00"
+      },
+      {
+        "delivery_date": "2025-10-26",
+        "forecast_step": 25,
+        "interval_end_utc": "2025-10-25T22:00:00+00:00",
+        "issue_at": "2025-10-25T16:00:00+00:00",
+        "lead_from_issue_minutes": 345,
+        "lead_from_origin_minutes": 375,
+        "observation_origin": "2025-10-25T15:30:00+00:00",
+        "role": "bridge",
+        "target_timestamp_local": "2025-10-25T23:45:00+02:00",
+        "target_timestamp_utc": "2025-10-25T21:45:00+00:00"
+      },
+      {
+        "delivery_date": "2025-10-26",
+        "forecast_step": 26,
+        "interval_end_utc": "2025-10-25T22:15:00+00:00",
+        "issue_at": "2025-10-25T16:00:00+00:00",
+        "lead_from_issue_minutes": 360,
+        "lead_from_origin_minutes": 390,
+        "observation_origin": "2025-10-25T15:30:00+00:00",
+        "role": "delivery",
+        "target_timestamp_local": "2025-10-26T00:00:00+02:00",
+        "target_timestamp_utc": "2025-10-25T22:00:00+00:00"
+      },
+      {
+        "delivery_date": "2025-10-26",
+        "forecast_step": 125,
+        "interval_end_utc": "2025-10-26T23:00:00+00:00",
+        "issue_at": "2025-10-25T16:00:00+00:00",
+        "lead_from_issue_minutes": 1845,
+        "lead_from_origin_minutes": 1875,
+        "observation_origin": "2025-10-25T15:30:00+00:00",
+        "role": "delivery",
+        "target_timestamp_local": "2025-10-26T23:45:00+01:00",
+        "target_timestamp_utc": "2025-10-26T22:45:00+00:00"
+      }
+    ]
+  }
+]

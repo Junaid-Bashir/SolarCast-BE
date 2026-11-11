@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-11-11T11:25:31.929244Z",
+  "attribution": "Source: Elia Transmission Belgium SA, Elia Open Data ods032, CC BY 4.0. Selected records; no imputation.",
+  "files": [
+    {
+      "path": "national-records.json",
+      "url": "https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/records?where=region%3D%27Belgium%27+AND+%28%28datetime+%3E%3D+date%272024-01-01T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-01-01T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-01-21T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-01-21T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-01-22T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-01-22T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-01-23T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-01-23T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-03-30T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-03-30T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-03-31T21%3A30%3A00Z%27+AND+datetime+%3C+date%272024-03-31T22%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-07-01T21%3A30%3A00Z%27+AND+datetime+%3C+date%272024-07-01T22%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-10-15T21%3A30%3A00Z%27+AND+datetime+%3C+date%272024-10-15T22%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-10-16T21%3A30%3A00Z%27+AND+datetime+%3C+date%272024-10-16T22%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272025-01-01T22%3A30%3A00Z%27+AND+datetime+%3C+date%272025-01-01T23%3A15%3A00Z%27%29%29&select=datetime%2Cregion%2Cmeasured%2Cmonitoredcapacity%2Cdayahead11hforecast%2Cdayaheadforecast&order_by=datetime&limit=100",
+      "sha256": "964082eb0adb5a39963d25154b2dedd2c46d3e48f1f10a7b3365a6b409f87b5a"
+    },
+    {
+      "path": "national-export.csv",
+      "url": "https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/csv?where=region%3D%27Belgium%27+AND+%28%28datetime+%3E%3D+date%272024-01-01T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-01-01T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-01-21T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-01-21T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-01-22T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-01-22T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-01-23T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-01-23T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-03-30T22%3A30%3A00Z%27+AND+datetime+%3C+date%272024-03-30T23%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-03-31T21%3A30%3A00Z%27+AND+datetime+%3C+date%272024-03-31T22%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-07-01T21%3A30%3A00Z%27+AND+datetime+%3C+date%272024-07-01T22%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-10-15T21%3A30%3A00Z%27+AND+datetime+%3C+date%272024-10-15T22%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272024-10-16T21%3A30%3A00Z%27+AND+datetime+%3C+date%272024-10-16T22%3A15%3A00Z%27%29+OR+%28datetime+%3E%3D+date%272025-01-01T22%3A30%3A00Z%27+AND+datetime+%3C+date%272025-01-01T23%3A15%3A00Z%27%29%29&select=datetime%2Cregion%2Cmeasured%2Cmonitoredcapacity%2Cdayahead11hforecast%2Cdayaheadforecast&order_by=datetime&limit=-1&timezone=UTC&delimiter=%2C",
+      "sha256": "6f84daea3ffb6bcf2df5055adb345f172d86b5886f2df3b420221a3448ed9ba1"
+    },
+    {
+      "path": "regional-records.json",
+      "url": "https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/records?where=datetime%3Ddate%272024-01-01T22%3A45%3A00Z%27+OR+datetime%3Ddate%272024-01-22T22%3A45%3A00Z%27+OR+datetime%3Ddate%272024-07-01T21%3A45%3A00Z%27+OR+datetime%3Ddate%272024-10-15T21%3A45%3A00Z%27+OR+datetime%3Ddate%272024-10-16T21%3A45%3A00Z%27&select=datetime%2Cregion%2Cmeasured%2Cmonitoredcapacity%2Cdayahead11hforecast%2Cdayaheadforecast&order_by=datetime%2Cregion&limit=100",
+      "sha256": "530203ef2d93c033d54822b48d15ac6bbdd8adeac53fa9e42402eb67111e89fe"
+    },
+    {
+      "path": "all-missing-records.json",
+      "url": "https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods032/exports/json?where=region%3D%27Belgium%27+AND+measured+is+null+AND+datetime+%3E%3D+date%272023-12-31T23%3A00%3A00Z%27+AND+datetime+%3C+date%272025-12-31T23%3A00%3A00Z%27&select=datetime%2Cregion%2Cmeasured&order_by=datetime&limit=-1&timezone=UTC",
+      "sha256": "695a85f977cbd5951155c54d965ae971360b3cfa75a44113c6f6cfb9e1790233"
+    }
+  ]
+}

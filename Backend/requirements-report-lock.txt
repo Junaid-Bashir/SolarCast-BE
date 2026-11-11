@@ -1,0 +1,9 @@
+# Optional chart tooling; verified with the existing core lock on Python 3.12.
+-r requirements-lock.txt
+matplotlib==3.11.2
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.68.0
+kiwisolver==1.5.1
+pillow==13.0.0
+pyparsing==3.3.3
