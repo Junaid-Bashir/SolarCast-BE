@@ -112,7 +112,12 @@ The [weather-source audit](Shared/docs/weather-source-audit.md) checks archived
 radiation, cloud and temperature forecasts before adding them to the models.
 The [weather ingestion pipeline](Shared/docs/weather-ingestion.md) now aligns
 those forecasts with the solar targets. All 273 validation days have complete
-weather features; weather-aware model fitting remains the next step.
+weather features. The [paired weather experiment](Shared/docs/weather-pair.md)
+trains two direct XGBoost correction models on the same 7,274 examples: adding
+weather reduces validation RMSE from 1,001 to 877 MW (12.46%). The seasonal
+baseline scores 1,020 MW. Historical weather publication times remain unverified;
+these are research validation results, and the live application still uses its
+existing forecasting engine. The reserved final test remains unscored.
 
 ## Data contract
 

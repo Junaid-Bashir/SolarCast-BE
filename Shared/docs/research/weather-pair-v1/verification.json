@@ -1,0 +1,25 @@
+{
+  "future_actual_mutation_days": 4,
+  "independent_metrics": {
+    "persistence": {
+      "mae_mw": 1700.1046589451994,
+      "rmse_mw": 2166.29780738283
+    },
+    "seasonal_naive_48h": {
+      "mae_mw": 497.0656546710426,
+      "rmse_mw": 1019.7004597800172
+    },
+    "xgboost_no_weather": {
+      "mae_mw": 500.45049599455314,
+      "rmse_mw": 1001.3093613551218
+    },
+    "xgboost_weather": {
+      "mae_mw": 446.94440730862294,
+      "rmse_mw": 876.529471124384
+    }
+  },
+  "matched_targets_per_model": 26204,
+  "matched_training_rows": 7274,
+  "passed": true,
+  "persisted_model_reproduction_days": 4
+}
