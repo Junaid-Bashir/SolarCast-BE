@@ -1,0 +1,35 @@
+{
+  "delivery_date": "2024-01-23",
+  "first_time": "2024-01-22T00:00",
+  "header": {
+    "elevation": 26.0,
+    "latitude": 50.875,
+    "longitude": 4.375,
+    "timezone": "GMT",
+    "utc_offset_seconds": 0
+  },
+  "hour_count": 48,
+  "hourly_units": {
+    "cloud_cover_previous_day2": "%",
+    "shortwave_radiation_previous_day2": "W/m\u00b2",
+    "temperature_2m_previous_day2": "\u00b0C",
+    "time": "iso8601"
+  },
+  "last_time": "2024-01-23T23:00",
+  "location": "brussels",
+  "model": "dwd_icon_eu",
+  "response_metadata_keys": [
+    "latitude",
+    "longitude",
+    "generationtime_ms",
+    "utc_offset_seconds",
+    "timezone",
+    "timezone_abbreviation",
+    "elevation",
+    "location_id",
+    "hourly_units",
+    "hourly"
+  ],
+  "source_sha256": "b7a4df816319becad14bab8b23e976dc7058988cb3847166aca320b64e48f2a0",
+  "weather_values_included": false
+}

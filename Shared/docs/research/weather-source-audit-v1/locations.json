@@ -1,0 +1,61 @@
+{
+  "locations": [
+    {
+      "latitude": 51.2194,
+      "longitude": 4.4025,
+      "name": "antwerp"
+    },
+    {
+      "latitude": 51.2093,
+      "longitude": 3.2247,
+      "name": "bruges"
+    },
+    {
+      "latitude": 51.0543,
+      "longitude": 3.7174,
+      "name": "ghent"
+    },
+    {
+      "latitude": 50.9307,
+      "longitude": 5.3325,
+      "name": "hasselt"
+    },
+    {
+      "latitude": 50.8798,
+      "longitude": 4.7005,
+      "name": "leuven"
+    },
+    {
+      "latitude": 50.7172,
+      "longitude": 4.6121,
+      "name": "wavre"
+    },
+    {
+      "latitude": 50.4542,
+      "longitude": 3.9567,
+      "name": "mons"
+    },
+    {
+      "latitude": 50.4674,
+      "longitude": 4.8718,
+      "name": "namur"
+    },
+    {
+      "latitude": 50.6326,
+      "longitude": 5.5797,
+      "name": "liege"
+    },
+    {
+      "latitude": 49.6833,
+      "longitude": 5.8167,
+      "name": "arlon"
+    },
+    {
+      "latitude": 50.8503,
+      "longitude": 4.3517,
+      "name": "brussels"
+    }
+  ],
+  "sampling": "Fixed representative city coordinates; not province centroids or PV-capacity weights.",
+  "version": 1
+}

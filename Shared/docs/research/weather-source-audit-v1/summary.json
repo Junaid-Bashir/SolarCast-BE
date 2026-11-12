@@ -1,0 +1,496 @@
+{
+  "assumed_processing_allowance_minutes": 370,
+  "attribution": "Weather data by Open-Meteo.com; underlying DWD ICON / NCEP GFS; CC BY 4.0. Selected, summarized by SolarCast.",
+  "audit_version": 1,
+  "cases": [
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2024-01-23",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2024-01-22T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-01-22T05:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 770,
+      "delivery_date": "2024-03-31",
+      "delivery_quarter_hours": 92,
+      "failed_locations": [],
+      "issue_at": "2024-03-30T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-03-30T04:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 24,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2024-06-15",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2024-06-14T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-06-14T04:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 650,
+      "delivery_date": "2024-10-27",
+      "delivery_quarter_hours": 100,
+      "failed_locations": [],
+      "issue_at": "2024-10-26T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-10-26T05:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 26,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2024-11-01",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2024-10-31T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-10-31T05:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2025-01-15",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2025-01-14T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-01-14T05:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 770,
+      "delivery_date": "2025-03-30",
+      "delivery_quarter_hours": 92,
+      "failed_locations": [],
+      "issue_at": "2025-03-29T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-03-29T04:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 24,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2025-06-15",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2025-06-14T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-06-14T04:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2025-09-30",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2025-09-29T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-09-29T04:10:00+00:00",
+      "model": "dwd_icon_eu",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2024-11-01",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2024-10-31T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-10-31T05:10:00+00:00",
+      "model": "dwd_icon_eu_native",
+      "nominal_rule_passed": true,
+      "passed": false,
+      "passed_locations": 0,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 770,
+      "delivery_date": "2025-03-30",
+      "delivery_quarter_hours": 92,
+      "failed_locations": [],
+      "issue_at": "2025-03-29T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-03-29T04:10:00+00:00",
+      "model": "dwd_icon_eu_native",
+      "nominal_rule_passed": true,
+      "passed": false,
+      "passed_locations": 0,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 24,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2025-06-15",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2025-06-14T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-06-14T04:10:00+00:00",
+      "model": "dwd_icon_eu_native",
+      "nominal_rule_passed": true,
+      "passed": false,
+      "passed_locations": 0,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2024-01-23",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2024-01-22T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-01-22T05:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 770,
+      "delivery_date": "2024-03-31",
+      "delivery_quarter_hours": 92,
+      "failed_locations": [
+        {
+          "clock_ok": true,
+          "grid_latitude": 50.6671,
+          "grid_longitude": 5.625,
+          "header_ok": true,
+          "location": "liege",
+          "passed": false,
+          "requested_latitude": 50.6326,
+          "requested_longitude": 5.5797,
+          "variables": {
+            "cloud_cover_previous_day2": {
+              "finite": 24,
+              "invalid_range": 1,
+              "maximum": 101,
+              "minimum": 16,
+              "missing_or_nonfinite": 0,
+              "required": 24,
+              "units_ok": true
+            },
+            "shortwave_radiation_previous_day2": {
+              "finite": 24,
+              "invalid_range": 0,
+              "maximum": 649.0,
+              "minimum": 0.0,
+              "missing_or_nonfinite": 0,
+              "required": 24,
+              "units_ok": true
+            },
+            "temperature_2m_previous_day2": {
+              "finite": 24,
+              "invalid_range": 0,
+              "maximum": 16.1,
+              "minimum": 5.2,
+              "missing_or_nonfinite": 0,
+              "required": 24,
+              "units_ok": true
+            }
+          }
+        }
+      ],
+      "issue_at": "2024-03-30T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-03-30T04:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": false,
+      "passed_locations": 10,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 24,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2024-06-15",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2024-06-14T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-06-14T04:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 650,
+      "delivery_date": "2024-10-27",
+      "delivery_quarter_hours": 100,
+      "failed_locations": [],
+      "issue_at": "2024-10-26T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-10-26T05:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 26,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2024-11-01",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2024-10-31T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2024-10-31T05:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2025-01-15",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2025-01-14T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-01-14T05:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 770,
+      "delivery_date": "2025-03-30",
+      "delivery_quarter_hours": 92,
+      "failed_locations": [
+        {
+          "clock_ok": true,
+          "grid_latitude": 50.6671,
+          "grid_longitude": 5.625,
+          "header_ok": true,
+          "location": "liege",
+          "passed": false,
+          "requested_latitude": 50.6326,
+          "requested_longitude": 5.5797,
+          "variables": {
+            "cloud_cover_previous_day2": {
+              "finite": 24,
+              "invalid_range": 1,
+              "maximum": 101,
+              "minimum": 0,
+              "missing_or_nonfinite": 0,
+              "required": 24,
+              "units_ok": true
+            },
+            "shortwave_radiation_previous_day2": {
+              "finite": 24,
+              "invalid_range": 0,
+              "maximum": 512.0,
+              "minimum": 0.0,
+              "missing_or_nonfinite": 0,
+              "required": 24,
+              "units_ok": true
+            },
+            "temperature_2m_previous_day2": {
+              "finite": 24,
+              "invalid_range": 0,
+              "maximum": 12.8,
+              "minimum": 2.4,
+              "missing_or_nonfinite": 0,
+              "required": 24,
+              "units_ok": true
+            }
+          }
+        }
+      ],
+      "issue_at": "2025-03-29T17:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-03-29T04:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": false,
+      "passed_locations": 10,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 24,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2025-06-15",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2025-06-14T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-06-14T04:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    },
+    {
+      "assumed_deadline_margin_minutes": 710,
+      "delivery_date": "2025-09-30",
+      "delivery_quarter_hours": 96,
+      "failed_locations": [],
+      "issue_at": "2025-09-29T16:00:00+00:00",
+      "latest_nominal_available_at_assumed": "2025-09-29T04:10:00+00:00",
+      "model": "gfs_global",
+      "nominal_rule_passed": true,
+      "passed": true,
+      "passed_locations": 11,
+      "publication_times_verified": false,
+      "required_hour_boundaries": 25,
+      "response_locations": 11
+    }
+  ],
+  "collection_started_at_utc": "2026-11-12T12:56:36.710533+00:00",
+  "decision": {
+    "historical_candidate": "dwd_icon_eu",
+    "live_version_compatibility_verified": false,
+    "model_training_performed": false,
+    "next_gate": "Full archived coverage, cache/provenance and a separate live-grid migration decision.",
+    "status": "conditional_research_candidate"
+  },
+  "full_study_coverage_verified": false,
+  "historical_publication_times_verified": false,
+  "models": {
+    "dwd_icon_eu": {
+      "location_date_cases": 99,
+      "passed_dates": 9,
+      "passed_location_date_cases": 99,
+      "sampled_dates": 9
+    },
+    "dwd_icon_eu_native": {
+      "location_date_cases": 33,
+      "passed_dates": 0,
+      "passed_location_date_cases": 0,
+      "sampled_dates": 3
+    },
+    "gfs_global": {
+      "location_date_cases": 99,
+      "passed_dates": 7,
+      "passed_location_date_cases": 97,
+      "sampled_dates": 9
+    }
+  },
+  "nominal_lead_hours": 48,
+  "scope": "Sample source coverage and retrospective timing assumptions only; no solar labels or model evaluation.",
+  "variable_quality_totals": {
+    "dwd_icon_eu": {
+      "cloud_cover_previous_day2": {
+        "finite": 2464,
+        "invalid_range": 0,
+        "missing_or_nonfinite": 0,
+        "required": 2464
+      },
+      "shortwave_radiation_previous_day2": {
+        "finite": 2464,
+        "invalid_range": 0,
+        "missing_or_nonfinite": 0,
+        "required": 2464
+      },
+      "temperature_2m_previous_day2": {
+        "finite": 2464,
+        "invalid_range": 0,
+        "missing_or_nonfinite": 0,
+        "required": 2464
+      }
+    },
+    "dwd_icon_eu_native": {
+      "cloud_cover_previous_day2": {
+        "finite": 0,
+        "invalid_range": 0,
+        "missing_or_nonfinite": 814,
+        "required": 814
+      },
+      "shortwave_radiation_previous_day2": {
+        "finite": 0,
+        "invalid_range": 0,
+        "missing_or_nonfinite": 814,
+        "required": 814
+      },
+      "temperature_2m_previous_day2": {
+        "finite": 0,
+        "invalid_range": 0,
+        "missing_or_nonfinite": 814,
+        "required": 814
+      }
+    },
+    "gfs_global": {
+      "cloud_cover_previous_day2": {
+        "finite": 2464,
+        "invalid_range": 2,
+        "missing_or_nonfinite": 0,
+        "required": 2464
+      },
+      "shortwave_radiation_previous_day2": {
+        "finite": 2464,
+        "invalid_range": 0,
+        "missing_or_nonfinite": 0,
+        "required": 2464
+      },
+      "temperature_2m_previous_day2": {
+        "finite": 2464,
+        "invalid_range": 0,
+        "missing_or_nonfinite": 0,
+        "required": 2464
+      }
+    }
+  }
+}
