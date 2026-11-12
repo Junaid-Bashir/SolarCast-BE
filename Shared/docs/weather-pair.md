@@ -88,8 +88,8 @@ The verifier checks checksums, identical scoring keys, source labels, independen
 MAE/RMSE calculations, fitting cutoff, persisted model reproduction on four days,
 and invariance when all production after the observation origin is removed.
 
-Next: commit 11 will turn these saved predictions into clearly labelled
-prediction-versus-actual charts and a concise results post, with these limitations.
+The [commit-11 prediction-versus-actual charts](weather-predictions.md) now show
+the saved forecasts, with deterministic example selection and these limitations.
 
 Weather: Open-Meteo.com / DWD ICON EU, CC BY 4.0. Solar: Elia Transmission Belgium
 SA, [ods032](https://opendata.elia.be/explore/dataset/ods032/), CC BY 4.0.

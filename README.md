@@ -119,6 +119,12 @@ baseline scores 1,020 MW. Historical weather publication times remain unverified
 these are research validation results, and the live application still uses its
 existing forecasting engine. The reserved final test remains unscored.
 
+See the [prediction-versus-actual charts](Shared/docs/weather-predictions.md),
+including an automatically selected median-error day and examples across the
+error range. These show the original quarter-hour forecasts without smoothing.
+
+![Belgian solar predictions versus actual production on the median-error validation day](Shared/images/weather-prediction-v1.png)
+
 ## Data contract
 
 Use UTF-8 comma-separated `.csv`, at most 10 MB, 100,000 rows, and 100 columns, with unique nonempty headers and consistent row widths. Map distinct timestamp/generation columns explicitly. Use ISO 8601 (for example `2026-06-01T08:15:00+02:00`) and finite numeric generation in one source unit. Optional capacity must be positive/finite. Do not mix sites in a single series.

@@ -1,0 +1,31 @@
+{
+  "days": [
+    {
+      "delivery_date": "2025-01-28",
+      "label": "Lower error",
+      "rank_one_based": 28,
+      "rmse_mw": 295.56850775584803
+    },
+    {
+      "delivery_date": "2025-09-29",
+      "label": "Median error",
+      "rank_one_based": 137,
+      "rmse_mw": 654.3594705079188
+    },
+    {
+      "delivery_date": "2025-03-19",
+      "label": "Higher error",
+      "rank_one_based": 245,
+      "rmse_mw": 1393.992108374083
+    }
+  ],
+  "images_sha256": {
+    "weather-prediction-range-v1.png": "26851e6add33a04efddd0d313e6fd1ff528dcbfb9c336d6912fb835783e9bf3a",
+    "weather-prediction-v1.png": "156eb8f0fcb52819677266978874335b797531c8525f617a82b450078a53fd0e"
+  },
+  "reserved_test_plotted": false,
+  "selection": "Sort daily weather RMSE ascending, delivery date as tie-break; zero-based floor(q*(N-1)), q=0.1,0.5,0.9.",
+  "source_predictions_sha256": "08adbc18809ca2dcacfdebb9afb4c6c49ee6e7d691a32aea40b71e3af5dc18d1",
+  "source_summary_sha256": "89dba0552ad51eeddd211f66b5ecf5378948005d83c7a38cde3995ac3771e366",
+  "validation_days": 273
+}
