@@ -1,0 +1,11 @@
+{
+  "all_subsequent_weather_targets_valid": true,
+  "first_complete_weather_target_utc": "2024-01-20 12:00:00+00:00",
+  "models_fitted": false,
+  "offline_alignment_csvs_identical": true,
+  "offline_hourly_csvs_identical": true,
+  "raw_formula_spot_checks": 12,
+  "reserved_test_targets_included": false,
+  "solar_missing_values_preserved": 288,
+  "validated_targets": 61340
+}

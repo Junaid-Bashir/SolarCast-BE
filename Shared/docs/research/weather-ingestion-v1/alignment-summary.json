@@ -1,0 +1,64 @@
+{
+  "alignment_version": 1,
+  "allowance_minutes_assumed": 370,
+  "artifacts_sha256": {
+    "ATTRIBUTION.txt": "0580241c3ab30a0c32214c7a175021fc38c20a25fb0353c4badea06e0f2680e5",
+    "daily-coverage.csv": "0b8e5a9cbfd161146cfbd14d397aa87098fa200825cbed17f985fefa8f512b48",
+    "solar-aligned.csv": "3e233f7e68fcc02e0379797d7177649d0b35670f3aafa3613a0a4002f49a4c45",
+    "weather-features.csv": "9707ce59850b9aa531d06ea47cc6b3c3dafd4cafb810fc3ee97662bf530b5858"
+  },
+  "attribution": "Weather data by Open-Meteo.com, DWD ICON EU, CC BY 4.0; selected, aligned and equally aggregated by SolarCast.",
+  "complete": true,
+  "end_local_exclusive": "2025-10-01",
+  "feature_columns": [
+    "forecast_radiation_mean",
+    "forecast_radiation_min",
+    "forecast_radiation_max",
+    "forecast_cloud_mean",
+    "forecast_cloud_min",
+    "forecast_cloud_max",
+    "forecast_temperature_mean",
+    "forecast_temperature_min",
+    "forecast_temperature_max"
+  ],
+  "feature_definition": {
+    "radiation": "Covering trailing-hour mean; same value for all four quarters.",
+    "spatial": "Equal-weight mean/min/max only when all 11 locations are valid.",
+    "temperature_and_cloud": "Linear interpolation at interval midpoint, only between valid adjacent hourly forecasts."
+  },
+  "historical_publication_times_verified": false,
+  "joint_valid": 59195,
+  "live_grid_compatibility_verified": false,
+  "model": "dwd_icon_eu",
+  "models_fitted": false,
+  "nominal_lead_hours": 48,
+  "periods": {
+    "training_2024": {
+      "complete_joint_days": 78,
+      "complete_weather_days": 346,
+      "days": 366,
+      "joint_valid": 32991,
+      "solar_valid": 34848,
+      "targets": 35136,
+      "weather_valid": 33260
+    },
+    "validation_2025": {
+      "complete_joint_days": 273,
+      "complete_weather_days": 273,
+      "days": 273,
+      "joint_valid": 26204,
+      "solar_valid": 26204,
+      "targets": 26204,
+      "weather_valid": 26204
+    }
+  },
+  "reserved_test_included": false,
+  "solar_attribution": "Solar study: Elia Transmission Belgium SA, ods032 (https://opendata.elia.be/explore/dataset/ods032/), CC BY 4.0; timestamp-normalized reference targets, unchanged by weather alignment.",
+  "solar_input_sha256": "c82bbb0619771bc5cace5e841146950a223f1b791eecba41bd8368cd28c2d1d3",
+  "solar_missing_or_invalid": 288,
+  "solar_valid": 61052,
+  "start_local": "2024-01-01",
+  "targets": 61340,
+  "weather_summary_sha256": "8705b63fb44c9df883e228281142be632b6b121ee778450df2ff8304cc55011c",
+  "weather_valid": 59464
+}

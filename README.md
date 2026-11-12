@@ -110,6 +110,9 @@ coverage, recursive inference, measured runtime and reproducible artifacts.
 
 The [weather-source audit](Shared/docs/weather-source-audit.md) checks archived
 radiation, cloud and temperature forecasts before adding them to the models.
+The [weather ingestion pipeline](Shared/docs/weather-ingestion.md) now aligns
+those forecasts with the solar targets. All 273 validation days have complete
+weather features; weather-aware model fitting remains the next step.
 
 ## Data contract
 

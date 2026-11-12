@@ -1,0 +1,269 @@
+{
+  "allowance_minutes_assumed": 370,
+  "attribution": "Weather data by Open-Meteo.com, DWD ICON EU, CC BY 4.0; selected, aligned and equally aggregated by SolarCast.",
+  "complete": true,
+  "end_local_exclusive": "2025-10-01",
+  "historical_publication_times_verified": false,
+  "locations": [
+    {
+      "latitude": 51.2194,
+      "longitude": 4.4025,
+      "name": "antwerp"
+    },
+    {
+      "latitude": 51.2093,
+      "longitude": 3.2247,
+      "name": "bruges"
+    },
+    {
+      "latitude": 51.0543,
+      "longitude": 3.7174,
+      "name": "ghent"
+    },
+    {
+      "latitude": 50.9307,
+      "longitude": 5.3325,
+      "name": "hasselt"
+    },
+    {
+      "latitude": 50.8798,
+      "longitude": 4.7005,
+      "name": "leuven"
+    },
+    {
+      "latitude": 50.7172,
+      "longitude": 4.6121,
+      "name": "wavre"
+    },
+    {
+      "latitude": 50.4542,
+      "longitude": 3.9567,
+      "name": "mons"
+    },
+    {
+      "latitude": 50.4674,
+      "longitude": 4.8718,
+      "name": "namur"
+    },
+    {
+      "latitude": 50.6326,
+      "longitude": 5.5797,
+      "name": "liege"
+    },
+    {
+      "latitude": 49.6833,
+      "longitude": 5.8167,
+      "name": "arlon"
+    },
+    {
+      "latitude": 50.8503,
+      "longitude": 4.3517,
+      "name": "brussels"
+    }
+  ],
+  "model": "dwd_icon_eu",
+  "nominal_lead_hours": 48,
+  "registry_sha256": "f5ddb2741fe18f921738ec0c4fd8cc9b05b55d84d7c30d11320894ef5fc99b18",
+  "responses": [
+    {
+      "end_utc_exclusive": "2024-01-28T00:00:00+00:00",
+      "path": "raw/000.json",
+      "retrieved_at_utc": "2026-11-12T13:16:36.324486+00:00",
+      "sha256": "a8c8874430cc69fd5f6d8c2f736c4f022ea1d5303439c6d7a48945fae1b6fc5e",
+      "start_utc": "2023-12-31T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2023-12-31&end_date=2024-01-27&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-02-25T00:00:00+00:00",
+      "path": "raw/001.json",
+      "retrieved_at_utc": "2026-11-12T13:16:38.103376+00:00",
+      "sha256": "0f9028b34842590ad534eacf81d36d7713ff4b8e06d04bd140040c76fc246276",
+      "start_utc": "2024-01-28T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-01-28&end_date=2024-02-24&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-03-24T00:00:00+00:00",
+      "path": "raw/002.json",
+      "retrieved_at_utc": "2026-11-12T13:16:39.465828+00:00",
+      "sha256": "b582e784c6bc3bf3807321070fd52f962a8c7e4cb7bea6b9b4e47dba2a403001",
+      "start_utc": "2024-02-25T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-02-25&end_date=2024-03-23&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-04-21T00:00:00+00:00",
+      "path": "raw/003.json",
+      "retrieved_at_utc": "2026-11-12T13:16:40.859120+00:00",
+      "sha256": "a3a619697ae936adc0d99868f8336047c2417c0df3721f2d21e47818931aa243",
+      "start_utc": "2024-03-24T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-03-24&end_date=2024-04-20&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-05-19T00:00:00+00:00",
+      "path": "raw/004.json",
+      "retrieved_at_utc": "2026-11-12T13:16:42.235376+00:00",
+      "sha256": "91a5bbcb6430d57d540f7da9136b6d70ebb337b37d6f28f9258ecb8550083225",
+      "start_utc": "2024-04-21T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-04-21&end_date=2024-05-18&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-06-16T00:00:00+00:00",
+      "path": "raw/005.json",
+      "retrieved_at_utc": "2026-11-12T13:16:43.604791+00:00",
+      "sha256": "404fe86ea127a1f162a935e5269675f2d2dfb4138b04124bfac3b814643387ba",
+      "start_utc": "2024-05-19T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-05-19&end_date=2024-06-15&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-07-14T00:00:00+00:00",
+      "path": "raw/006.json",
+      "retrieved_at_utc": "2026-11-12T13:16:45.002636+00:00",
+      "sha256": "10f588765b33870b5736fa27a95fc9a13e777319f3f93ab456d7c459d147bddf",
+      "start_utc": "2024-06-16T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-06-16&end_date=2024-07-13&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-08-11T00:00:00+00:00",
+      "path": "raw/007.json",
+      "retrieved_at_utc": "2026-11-12T13:16:46.365182+00:00",
+      "sha256": "eecdb109f4643a37e4c049e322d87babc7ef6ad0633f110f495bd84b1b4ed722",
+      "start_utc": "2024-07-14T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-07-14&end_date=2024-08-10&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-09-08T00:00:00+00:00",
+      "path": "raw/008.json",
+      "retrieved_at_utc": "2026-11-12T13:16:47.762829+00:00",
+      "sha256": "2b9d39bd764112081dc6b89829533c39d924469ac7f65dac92439c695aad3a7a",
+      "start_utc": "2024-08-11T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-08-11&end_date=2024-09-07&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-10-06T00:00:00+00:00",
+      "path": "raw/009.json",
+      "retrieved_at_utc": "2026-11-12T13:16:49.297257+00:00",
+      "sha256": "5baf05e23c9abf7b87328667ae644b00a45a524b7418669cbfe40d323d52e340",
+      "start_utc": "2024-09-08T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-09-08&end_date=2024-10-05&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-11-03T00:00:00+00:00",
+      "path": "raw/010.json",
+      "retrieved_at_utc": "2026-11-12T13:16:50.650530+00:00",
+      "sha256": "3202646a60493e4dc2a7b985e714bb5f96e9dd136fe2d9176e0067e13f063d64",
+      "start_utc": "2024-10-06T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-10-06&end_date=2024-11-02&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-12-01T00:00:00+00:00",
+      "path": "raw/011.json",
+      "retrieved_at_utc": "2026-11-12T13:16:52.015275+00:00",
+      "sha256": "daa176bc37520ef1784d51a7943def1984f75cd3ba885b645fb9cc86e3ef243d",
+      "start_utc": "2024-11-03T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-11-03&end_date=2024-11-30&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2024-12-29T00:00:00+00:00",
+      "path": "raw/012.json",
+      "retrieved_at_utc": "2026-11-12T13:16:53.365152+00:00",
+      "sha256": "d7b22562ec572a424e8a6d8b090ee537c51c5b22e5af94ae51b492db3e6535d4",
+      "start_utc": "2024-12-01T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-12-01&end_date=2024-12-28&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-01-26T00:00:00+00:00",
+      "path": "raw/013.json",
+      "retrieved_at_utc": "2026-11-12T13:16:54.717087+00:00",
+      "sha256": "9b74737ed4cb7cb6da3f6b9add71e0ba34549f66e14bb112639f08af6cb84a50",
+      "start_utc": "2024-12-29T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2024-12-29&end_date=2025-01-25&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-02-23T00:00:00+00:00",
+      "path": "raw/014.json",
+      "retrieved_at_utc": "2026-11-12T13:16:56.409268+00:00",
+      "sha256": "636e5b852a7fe1c40a4e315aa3546e521d7bc48dc5dfc7f16605a141288110e9",
+      "start_utc": "2025-01-26T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-01-26&end_date=2025-02-22&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-03-23T00:00:00+00:00",
+      "path": "raw/015.json",
+      "retrieved_at_utc": "2026-11-12T13:16:57.838329+00:00",
+      "sha256": "88c07ec3537dbcf1edcb04c5df703f9902e8a4476289d8a90fa74d9de0c1110c",
+      "start_utc": "2025-02-23T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-02-23&end_date=2025-03-22&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-04-20T00:00:00+00:00",
+      "path": "raw/016.json",
+      "retrieved_at_utc": "2026-11-12T13:16:59.217073+00:00",
+      "sha256": "700483f529bba2f296a497d772dd4e124ce99750b20040877cace971613b32ad",
+      "start_utc": "2025-03-23T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-03-23&end_date=2025-04-19&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-05-18T00:00:00+00:00",
+      "path": "raw/017.json",
+      "retrieved_at_utc": "2026-11-12T13:17:00.620796+00:00",
+      "sha256": "fee85db8ad1869c8a7ce8cd53f3d9d43a141fe1fa7ae486ae7d9807526716a46",
+      "start_utc": "2025-04-20T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-04-20&end_date=2025-05-17&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-06-15T00:00:00+00:00",
+      "path": "raw/018.json",
+      "retrieved_at_utc": "2026-11-12T13:17:01.993997+00:00",
+      "sha256": "b0f22331b4e4f26b738ad983a67554631d96fbc477d041dce5e11e1c9082c480",
+      "start_utc": "2025-05-18T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-05-18&end_date=2025-06-14&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-07-13T00:00:00+00:00",
+      "path": "raw/019.json",
+      "retrieved_at_utc": "2026-11-12T13:17:03.384274+00:00",
+      "sha256": "6ab839ddd788a373a35a474c1062d07bece4b8300e82257b4d8b5c7ad5140ee6",
+      "start_utc": "2025-06-15T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-06-15&end_date=2025-07-12&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-08-10T00:00:00+00:00",
+      "path": "raw/020.json",
+      "retrieved_at_utc": "2026-11-12T13:17:04.934462+00:00",
+      "sha256": "d74b74fb0874604d71e0234f730a9d9b869e9f8c14f7eb59db094ffefbb1f030",
+      "start_utc": "2025-07-13T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-07-13&end_date=2025-08-09&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-09-07T00:00:00+00:00",
+      "path": "raw/021.json",
+      "retrieved_at_utc": "2026-11-12T13:17:06.894319+00:00",
+      "sha256": "966bb8b41e824fc690b189ffea4861974d811fdbe43ee8f5efd3d2037fc7459b",
+      "start_utc": "2025-08-10T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-08-10&end_date=2025-09-06&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    },
+    {
+      "end_utc_exclusive": "2025-10-01T00:00:00+00:00",
+      "path": "raw/022.json",
+      "retrieved_at_utc": "2026-11-12T13:17:08.236889+00:00",
+      "sha256": "cf585ace70ed2499d60f19a7a2900c149db94d2658df48e15ca40d3f0607bc5e",
+      "start_utc": "2025-09-07T00:00:00+00:00",
+      "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=51.2194%2C51.2093%2C51.0543%2C50.9307%2C50.8798%2C50.7172%2C50.4542%2C50.4674%2C50.6326%2C49.6833%2C50.8503&longitude=4.4025%2C3.2247%2C3.7174%2C5.3325%2C4.7005%2C4.6121%2C3.9567%2C4.8718%2C5.5797%2C5.8167%2C4.3517&start_date=2025-09-07&end_date=2025-09-30&hourly=shortwave_radiation_previous_day2%2Ccloud_cover_previous_day2%2Ctemperature_2m_previous_day2&models=dwd_icon_eu&timezone=UTC"
+    }
+  ],
+  "start_local": "2024-01-01",
+  "variables": {
+    "cloud": [
+      "cloud_cover_previous_day2",
+      "%"
+    ],
+    "radiation": [
+      "shortwave_radiation_previous_day2",
+      "W/m\u00b2"
+    ],
+    "temperature": [
+      "temperature_2m_previous_day2",
+      "\u00b0C"
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,96 @@
+{
+  "all_hourly_values_valid": false,
+  "allowance_minutes_assumed": 370,
+  "artifacts_sha256": {
+    "grid.csv": "9b57f5e71cd1d9c38b18a28a495d916b667bbbadc9fda851243ee7d6fad74b89",
+    "hourly.csv": "d4ef6d41f971a6b17e8eb84e0041b06a3503c2669fb1e8f6102fbfb5aef4b6db"
+  },
+  "attribution": "Weather data by Open-Meteo.com, DWD ICON EU, CC BY 4.0; selected, aligned and equally aggregated by SolarCast.",
+  "complete": true,
+  "end_local_exclusive": "2025-10-01",
+  "historical_publication_times_verified": false,
+  "live_grid_compatibility_verified": false,
+  "location_hour_rows": 168960,
+  "locations": [
+    {
+      "latitude": 51.2194,
+      "longitude": 4.4025,
+      "name": "antwerp"
+    },
+    {
+      "latitude": 51.2093,
+      "longitude": 3.2247,
+      "name": "bruges"
+    },
+    {
+      "latitude": 51.0543,
+      "longitude": 3.7174,
+      "name": "ghent"
+    },
+    {
+      "latitude": 50.9307,
+      "longitude": 5.3325,
+      "name": "hasselt"
+    },
+    {
+      "latitude": 50.8798,
+      "longitude": 4.7005,
+      "name": "leuven"
+    },
+    {
+      "latitude": 50.7172,
+      "longitude": 4.6121,
+      "name": "wavre"
+    },
+    {
+      "latitude": 50.4542,
+      "longitude": 3.9567,
+      "name": "mons"
+    },
+    {
+      "latitude": 50.4674,
+      "longitude": 4.8718,
+      "name": "namur"
+    },
+    {
+      "latitude": 50.6326,
+      "longitude": 5.5797,
+      "name": "liege"
+    },
+    {
+      "latitude": 49.6833,
+      "longitude": 5.8167,
+      "name": "arlon"
+    },
+    {
+      "latitude": 50.8503,
+      "longitude": 4.3517,
+      "name": "brussels"
+    }
+  ],
+  "manifest_sha256": "b7e3dd43b7be7b713f48603c1adb5b79c0584976e6c308a41baea126b6e7754e",
+  "model": "dwd_icon_eu",
+  "nominal_lead_hours": 48,
+  "start_local": "2024-01-01",
+  "variable_quality": {
+    "cloud": {
+      "invalid_range": 0,
+      "missing_or_nonfinite": 5412,
+      "valid": 163548,
+      "values": 168960
+    },
+    "radiation": {
+      "invalid_range": 0,
+      "missing_or_nonfinite": 5412,
+      "valid": 163548,
+      "values": 168960
+    },
+    "temperature": {
+      "invalid_range": 0,
+      "missing_or_nonfinite": 5412,
+      "valid": 163548,
+      "values": 168960
+    }
+  },
+  "weather_version": 1
+}

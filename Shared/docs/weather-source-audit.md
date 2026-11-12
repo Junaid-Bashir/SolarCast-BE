@@ -133,6 +133,11 @@ later is a fresh download, not proof of byte-identical historical service output
 
 ## Next gate
 
+Implemented follow-up: the [commit 9 ingestion report](weather-ingestion.md)
+audits the complete study interval, identifies the leading archive gap and
+provides versioned quarter-hour joins. This sample audit remains unchanged as
+the earlier source-selection record.
+
 Commit 9 must check the complete required training and validation date ranges,
 count weather exclusions, preserve raw provenance and implement the explicitly
 versioned temporal/spatial joins. Failed data checks must remain visible. The
