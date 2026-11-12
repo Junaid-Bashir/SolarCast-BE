@@ -21,7 +21,7 @@
   ],
   "images_sha256": {
     "weather-prediction-range-v1.png": "26851e6add33a04efddd0d313e6fd1ff528dcbfb9c336d6912fb835783e9bf3a",
-    "weather-prediction-v1.png": "156eb8f0fcb52819677266978874335b797531c8525f617a82b450078a53fd0e"
+    "weather-prediction-v1.png": "420aa82509403bd3cc201878fae51a970a79875d44befa434b7aaf42ceecb221"
   },
   "reserved_test_plotted": false,
   "selection": "Sort daily weather RMSE ascending, delivery date as tie-break; zero-based floor(q*(N-1)), q=0.1,0.5,0.9.",

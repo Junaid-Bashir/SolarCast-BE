@@ -15,6 +15,10 @@ production, teal is the weather-aware forecast, and dashed orange is the matched
 no-weather forecast. Weather does not improve every interval or every day; this
 example visibly misses the midday peak.
 
+The main chart includes explanatory legends, annotations for the midday miss
+and nighttime, a GW-to-MW unit explanation, and a plain-language definition of
+RMSE. The full-period result is separated from the single-day example.
+
 The **12.46% reduction** in RMSE is calculated across all 26,204 validation
 quarter-hours during January–September 2025, including nighttime, against the
 matching no-weather model. It is not the improvement on the illustrated day.

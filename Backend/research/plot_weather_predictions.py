@@ -78,7 +78,8 @@ def render(run,output):
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'text.color':'#142E42',
         'axes.labelcolor':'#536777','xtick.color':'#536777','ytick.color':'#536777',
         'axes.spines.top':False,'axes.spines.right':False,'axes.spines.left':False,'axes.edgecolor':'#DCE3E9'})
-    for filename,examples in [('weather-prediction-v1.png',[choices[1]]),('weather-prediction-range-v1.png',choices)]:
+    render_explained(report,frame,choices[1],output/'weather-prediction-v1.png')
+    for filename,examples in [('weather-prediction-range-v1.png',choices)]:
         many=len(examples)>1
         fig=plt.figure(figsize=(14,14 if many else 9),facecolor='#F5F7FA')
         fig.text(.08,.95,'SOLARCAST BE  /  BELGIAN SOLAR FORECASTING',fontsize=12,color='#008580',weight='bold')
@@ -103,6 +104,50 @@ def render(run,output):
         'days':choices,'validation_days':report['common_scored_days'],'reserved_test_plotted':False,
         'images_sha256':{name:digest(output/name) for name in ['weather-prediction-v1.png','weather-prediction-range-v1.png']}}
     return manifest
+
+
+def render_explained(report,frame,choice,output):
+    """Readable standalone explainer; all annotations use the unchanged forecasts."""
+    fig=plt.figure(figsize=(14,11),facecolor='#F5F7FA')
+    fig.text(.08,.955,'SOLARCAST BE  /  BELGIAN SOLAR FORECASTING',fontsize=12,color='#008580',weight='bold')
+    fig.text(.08,.905,'Predicting tomorrow’s solar production',fontsize=27,weight='bold')
+    fig.text(.08,.866,'What we predicted the evening before, compared with what happened.',fontsize=14,color='#536777')
+    legends=[(.08,'#142E42','Actual production','What Belgium produced\nElia reference data'),
+             (.38,'#C27B31','Prediction without weather','Uses past solar production\nand calendar information'),
+             (.70,'#008B88','Prediction with weather','Same model setup, plus forecasts\nof sunshine, cloud and temperature')]
+    for x,color,title,description in legends:
+        fig.text(x,.813,'━━' if color!='#C27B31' else '┄┄',color=color,fontsize=20,weight='bold')
+        fig.text(x+.045,.817,title,color=color,fontsize=12,weight='bold')
+        fig.text(x+.045,.777,description,fontsize=10,color='#536777',linespacing=1.6)
+    ax=fig.add_axes([.09,.365,.84,.33],facecolor='#F5F7FA')
+    panel(ax,frame,choice)
+    display_date=pd.Timestamp(choice['delivery_date']).strftime('%d %B %Y').lstrip('0')
+    ax.set_title(f'{display_date} · middle day ranked by weather-model error',loc='left',fontsize=12,pad=20)
+    ax.set_ylabel('Belgium’s solar output (GW)',labelpad=12)
+    ax.set_xlabel('Time of day in Belgium · each point represents a 15-minute interval',labelpad=12,color='#536777')
+    day=frame[(frame.delivery_date==choice['delivery_date'])&(frame.model==WEATHER)].reset_index(drop=True)
+    peak=day.actual_generation_mw.idxmax();row=day.iloc[peak]
+    local=pd.Timestamp(row.target_timestamp_utc).tz_convert('Europe/Brussels')
+    x=local.hour+local.minute/60
+    actual=float(row.actual_generation_mw)/1000;pred=float(row.predicted_generation_mw)/1000
+    ax.set_ylim(0,actual*1.28)
+    ax.annotate('',xy=(x,actual),xytext=(x,pred),arrowprops={'arrowstyle':'<->','color':'#008B88','lw':1.8})
+    ax.annotate('Midday miss\nThe weather model predicted\nless production than occurred.',
+                xy=(x,(actual+pred)/2),xytext=(16.3,actual*1.05),fontsize=10,color='#142E42',
+                arrowprops={'arrowstyle':'->','color':'#536777','connectionstyle':'arc3,rad=.15'},
+                bbox={'boxstyle':'round,pad=.5','fc':'#F5F7FA','ec':'#DCE3E9'})
+    ax.annotate('Nighttime\nSolar output is near zero.',xy=(3,0.02),xytext=(.8,actual*.30),fontsize=10,color='#536777',
+                arrowprops={'arrowstyle':'->','color':'#8193A3'})
+    fig.text(.09,.289,'HOW TO READ THE LINES',fontsize=10,color='#008580',weight='bold')
+    fig.text(.09,.261,'Closer to the dark line means a better prediction. Weather does not improve every day.',fontsize=12)
+    fig.text(.09,.229,'GW = gigawatts, a measure of power. 1 GW = 1,000 megawatts (MW).',fontsize=10,color='#536777')
+    fig.text(.09,.184,f"Across all {report['common_scored_days']} days: {report['weather_rmse_skill_vs_matched_control_pct']:.1f}% lower forecast error with weather",fontsize=17,weight='bold')
+    fig.text(.09,.155,'Measured using RMSE, an error score that gives more weight to large misses; lower is better.',fontsize=10,color='#536777')
+    fig.text(.09,.128,'Jan–Sep 2025, including nighttime · Compared with the matching model without weather, not this day alone.',fontsize=10,color='#536777')
+    fig.text(.09,.093,'Historical validation · Forecast deadline: 18:00 the previous day · Median-error example, not a best-day selection.',fontsize=9,color='#536777')
+    fig.text(.09,.067,'Archived weather; exact publication times unverified. This is a research result, not live operational performance.',fontsize=9,color='#536777')
+    fig.text(.09,.035,'Sources: Elia (ods032), Open-Meteo / DWD ICON EU · CC BY 4.0 | github.com/Junaid-Bashir/SolarCast-BE',fontsize=9,color='#536777')
+    fig.savefig(output,dpi=150,facecolor=fig.get_facecolor());plt.close(fig)
 
 
 if __name__=='__main__':
