@@ -1,0 +1,219 @@
+{
+  "artifacts_sha256": {
+    "daily-metrics.csv": "9c04465148becf323cd646b0fe0e8cefba9b2d7113bdae31fcdda22fd43659fd",
+    "predictions.csv": "68aec536c2623f274e70c330bb94fe0a18b03dba31ec0cddd6d4eae2dbb3e7e6",
+    "scored-predictions.csv": "1921c0cbd2882b6af1aeb0ebeceb243f2bf7cbf3461bd9f5c5fe1c16e8ef581b",
+    "training-eligibility.csv": "c2ba7549fb7b5b41b423c4a7c2784556cf938e818887159c1984916f5526fd52",
+    "windows.csv": "6100cac26d3d8288d75ceb080b81d23014f63cffb668bbab310e14008f8c7cbd"
+  },
+  "attribution": "Source: Elia Transmission Belgium SA, Elia Open Data ods032, CC BY 4.0. Filtered, time-normalized and evaluated independently by SolarCast.",
+  "candidate_days": 273,
+  "common_scored_days": 273,
+  "complete": true,
+  "end_local_exclusive": "2025-10-01",
+  "excluded_days": 0,
+  "feature_names": [
+    "observed_at_origin",
+    "lag_1_interval",
+    "lag_1_hour",
+    "lag_24_hours",
+    "rolling_hour_mean",
+    "rolling_day_mean",
+    "rolling_day_std",
+    "target_hour_sin",
+    "target_hour_cos",
+    "target_weekday_sin",
+    "target_weekday_cos",
+    "target_dayofyear_sin",
+    "target_dayofyear_cos"
+  ],
+  "first_training_target": "2024-01-22 23:15:00+00:00",
+  "fit_cutoff": "2024-12-31T17:00:00+00:00",
+  "input_sha256": "c82bbb0619771bc5cace5e841146950a223f1b791eecba41bd8368cd28c2d1d3",
+  "issued_windows_by_model": {
+    "lightgbm": 273,
+    "persistence": 273,
+    "random_forest": 273,
+    "seasonal_naive_48h": 273,
+    "xgboost": 273
+  },
+  "last_training_target": "2024-12-31 16:30:00+00:00",
+  "metrics": {
+    "lightgbm": {
+      "bias_mw": 544.1329056238877,
+      "mae_mw": 1123.136059086292,
+      "observations": 26204,
+      "rmse_mw": 1853.758033642793,
+      "rmse_skill_vs_persistence_pct": 14.427368789041328,
+      "rmse_skill_vs_seasonal_48h_pct": -81.79437067653272
+    },
+    "persistence": {
+      "bias_mw": 515.2496186460082,
+      "mae_mw": 1700.104658945199,
+      "observations": 26204,
+      "rmse_mw": 2166.29780738283,
+      "rmse_skill_vs_persistence_pct": 0.0,
+      "rmse_skill_vs_seasonal_48h_pct": -112.4445259002993
+    },
+    "random_forest": {
+      "bias_mw": -144.99116471980074,
+      "mae_mw": 1311.1191533829435,
+      "observations": 26204,
+      "rmse_mw": 1845.206139700132,
+      "rmse_skill_vs_persistence_pct": 14.822138793124584,
+      "rmse_skill_vs_seasonal_48h_pct": -80.95570341296143
+    },
+    "seasonal_naive_48h": {
+      "bias_mw": -9.135370668600212,
+      "mae_mw": 497.0656546710426,
+      "observations": 26204,
+      "rmse_mw": 1019.7004597800172,
+      "rmse_skill_vs_persistence_pct": 52.92888834098262,
+      "rmse_skill_vs_seasonal_48h_pct": 0.0
+    },
+    "xgboost": {
+      "bias_mw": -622.2260534342047,
+      "mae_mw": 1082.9859079438872,
+      "observations": 26204,
+      "rmse_mw": 1801.1575088503887,
+      "rmse_skill_vs_persistence_pct": 16.85549868942434,
+      "rmse_skill_vs_seasonal_48h_pct": -76.6359416214206
+    }
+  },
+  "ml_validation_version": 1,
+  "models": [
+    "persistence",
+    "seasonal_naive_48h",
+    "random_forest",
+    "xgboost",
+    "lightgbm"
+  ],
+  "notes": [
+    "Fixed model settings and seed 42; one fit per ML model, no validation tuning or early stopping.",
+    "Each issue uses only its 97-observation context; recursive predictions feed every subsequent step, including bridges.",
+    "All five models are scored on identical complete delivery windows; no bridge is scored.",
+    "Calendar features use UTC, matching the existing feature implementation.",
+    "Training is concentrated in autumn/winter; no future weather, capacity scaling or physical night constraint.",
+    "Historical publication delay and revision vintages remain assumptions.",
+    "Runtime is measured wall time, includes batch prediction only (not export), and is not deterministic."
+  ],
+  "parameters": {
+    "lightgbm": {
+      "boosting_type": "gbdt",
+      "class_weight": null,
+      "colsample_bytree": 1.0,
+      "deterministic": true,
+      "force_col_wise": true,
+      "importance_type": "split",
+      "learning_rate": 0.05,
+      "max_depth": -1,
+      "min_child_samples": 20,
+      "min_child_weight": 0.001,
+      "min_split_gain": 0.0,
+      "n_estimators": 120,
+      "n_jobs": 2,
+      "num_leaves": 24,
+      "objective": null,
+      "random_state": 42,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.0,
+      "subsample": 1.0,
+      "subsample_for_bin": 200000,
+      "subsample_freq": 0,
+      "verbosity": -1
+    },
+    "random_forest": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "criterion": "squared_error",
+      "max_depth": 12,
+      "max_features": 1.0,
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 3,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 100,
+      "n_jobs": 2,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "xgboost": {
+      "base_score": null,
+      "booster": null,
+      "callbacks": null,
+      "colsample_bylevel": null,
+      "colsample_bynode": null,
+      "colsample_bytree": null,
+      "device": null,
+      "early_stopping_rounds": null,
+      "enable_categorical": true,
+      "eval_metric": null,
+      "feature_types": null,
+      "feature_weights": null,
+      "gamma": null,
+      "grow_policy": null,
+      "importance_type": null,
+      "interaction_constraints": null,
+      "learning_rate": 0.05,
+      "max_bin": null,
+      "max_cat_threshold": null,
+      "max_cat_to_onehot": null,
+      "max_delta_step": null,
+      "max_depth": 5,
+      "max_leaves": null,
+      "min_child_weight": null,
+      "missing": "nan",
+      "monotone_constraints": null,
+      "multi_strategy": null,
+      "n_estimators": 120,
+      "n_jobs": 2,
+      "num_parallel_tree": null,
+      "objective": "reg:squarederror",
+      "random_state": 42,
+      "reg_alpha": null,
+      "reg_lambda": null,
+      "sampling_method": null,
+      "scale_pos_weight": null,
+      "subsample": null,
+      "tree_method": "hist",
+      "validate_parameters": null,
+      "verbosity": null
+    }
+  },
+  "period": "validation",
+  "publication_delay_after_interval_end_minutes_assumed": 15,
+  "reserved_test_scored": false,
+  "runtime": {
+    "lightgbm": {
+      "fit_seconds": 0.2451260000016191,
+      "negative_predictions_clipped": 19,
+      "prediction_seconds": 1.645719399999507
+    },
+    "persistence": {
+      "fit_seconds": 0.0,
+      "prediction_seconds": 2.818178000015905
+    },
+    "random_forest": {
+      "fit_seconds": 3.1249688000025344,
+      "negative_predictions_clipped": 0,
+      "prediction_seconds": 4.726111700001638
+    },
+    "seasonal_naive_48h": {
+      "fit_seconds": 0.0,
+      "prediction_seconds": 2.800151299998106
+    },
+    "xgboost": {
+      "fit_seconds": 0.8469861000012315,
+      "negative_predictions_clipped": 27,
+      "prediction_seconds": 1.5898589000025822
+    }
+  },
+  "scored_intervals_per_model": 26204,
+  "start_local": "2025-01-01",
+  "training_examples": 7368
+}

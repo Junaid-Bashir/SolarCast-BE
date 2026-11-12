@@ -154,6 +154,10 @@ training masks, the same issue deadlines, full bridge/delivery trajectories and
 a comparable complete-day validation set. Keep the final test locked during that
 development and model-selection process.
 
+Implemented follow-up: the [commit 7 ML comparison](ml-validation.md) evaluates
+the three existing tree algorithms with frozen fitting and complete recursive
+trajectories. The baseline scores above reproduce exactly on its common set.
+
 ## Attribution
 
 Source: Elia Transmission Belgium SA, [Elia Open Data ods032](https://opendata.elia.be/explore/dataset/ods032/),

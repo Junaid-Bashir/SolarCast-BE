@@ -103,6 +103,11 @@ assumptions and limitations accompany the results.
 
 ![Baseline validation results](Shared/images/baseline-validation-v1.png)
 
+The [first frozen-ML comparison](Shared/docs/ml-validation.md) now evaluates
+Random Forest, XGBoost and LightGBM on the same validation days. None beats the
+48-hour seasonal baseline in this experiment; the report includes training
+coverage, recursive inference, measured runtime and reproducible artifacts.
+
 ## Data contract
 
 Use UTF-8 comma-separated `.csv`, at most 10 MB, 100,000 rows, and 100 columns, with unique nonempty headers and consistent row widths. Map distinct timestamp/generation columns explicitly. Use ISO 8601 (for example `2026-06-01T08:15:00+02:00`) and finite numeric generation in one source unit. Optional capacity must be positive/finite. Do not mix sites in a single series.
